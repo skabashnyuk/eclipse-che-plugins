@@ -1,0 +1,7 @@
+id: org.ksmster.broadway-sample
+version: 1.0.0
+type: Che Editor
+name: broadway-sample
+title: Alexander Larsson broadway docker sample
+description: Alexander Larsson broadway docker sample
+url: https://github.com/eclipse/che-editor-gwt-ide/releases/download/che-editor-gwt-ide-2018-12-18_1647-59/che-editor-plugin.tar.gz
