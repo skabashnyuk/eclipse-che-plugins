@@ -13,7 +13,7 @@ endpoints:
       protocol: http
       type: ide
 containers:
- - name: che-editor-broadway-sample
+ - name: broadway
    image: ksmster/che-editor-broadway-sample
    ports:
        - exposedPort: 8080
