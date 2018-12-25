@@ -4,4 +4,4 @@ type: Che Editor
 name: broadway-sample
 title: Alexander Larsson broadway docker sample
 description: Alexander Larsson broadway docker sample
-url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/broadway-docker/1.0.0/che-editor-plugin.tar.gz
+url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.ksmster.broadway-sample/1.0.0/che-editor-plugin.tar.gz
