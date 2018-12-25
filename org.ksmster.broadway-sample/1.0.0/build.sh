@@ -6,7 +6,7 @@ set -u
 dockerImageName=ksmster/che-editor-$(yq r meta.yaml name)
 echo "Building docker image $dockerImageName"
 docker build . -t ${dockerImageName}
-docker push ${dockerImageName}
+#docker push ${dockerImageName}
 
 set +e
 git diff -s --exit-code  che-plugin.yaml
