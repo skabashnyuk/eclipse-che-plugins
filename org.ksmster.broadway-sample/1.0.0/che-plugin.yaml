@@ -12,6 +12,7 @@ endpoints:
     attributes:
       protocol: http
       type: ide
+      discoverable: false
 containers:
  - name: broadway
    image: ksmster/che-editor-broadway-sample
