@@ -8,7 +8,7 @@ projects:
 tools:
   - name: broadway-sample
     type: cheEditor
-    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.broadway-sample:1.0.0
+    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.filebrowser:1.0.0
 commands:
   - name: build
     actions:

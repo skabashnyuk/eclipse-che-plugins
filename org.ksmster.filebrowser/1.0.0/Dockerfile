@@ -28,4 +28,4 @@ COPY --chown=user:root .filebrowser.json /home/user/.filebrowser.json
 ADD entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD /home/user/filebrowser
+CMD ["./filebrowser", "--auth.method=none"]

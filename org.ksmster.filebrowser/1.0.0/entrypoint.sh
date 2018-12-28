@@ -20,4 +20,3 @@ if ! grep -Fq "${USER_ID}" /etc/passwd; then
 fi
 
 exec "$@"
-CMD /filebrowse

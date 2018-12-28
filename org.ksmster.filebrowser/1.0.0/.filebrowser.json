@@ -1,9 +1,9 @@
 {
   "port": 8080,
   "address": "",
-  "database": "/database.db",
+  "database": "./database.db",
   "defaults": {
-    "scope": "/srv",
+    "scope": "/projects",
     "allowCommands": true,
     "allowEdit": true,
     "allowNew": true,
