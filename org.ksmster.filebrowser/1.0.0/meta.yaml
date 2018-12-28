@@ -1,0 +1,7 @@
+id: org.ksmster.filebrowser
+version: 1.0.0
+type: Che Editor
+name: filebrowser
+title: File browser sample
+description: File browser sample
+url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.ksmster.filebrowser/1.0.0/che-editor-plugin.tar.gz
