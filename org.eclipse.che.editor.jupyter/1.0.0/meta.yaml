@@ -5,4 +5,4 @@ name: jupyter-notebook
 title: Jupyter Notebook as Editor for Eclipse Che
 description: Jupyter Notebook as Editor for Eclipse Che
 icon: https://jupyter.org/assets/main-logo.svg
-url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/org.eclipse.che.editor.jupyter/1.0.0/che-editor-plugin.tar.gz
+url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.eclipse.che.editor.jupyter/1.0.0/che-editor-plugin.tar.gz
