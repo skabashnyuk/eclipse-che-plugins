@@ -2,7 +2,7 @@ version: 1.0.0
 type: Che Editor
 name: jupyter-notebook
 id: org.eclipse.che.editor.jupyter
-title: Jupyter Notebook as Editor for Eclipse Che
+title: Jupyter Notebook as an Editor for Eclipse Che
 description: Jupyter Notebook as Editor for Eclipse Che
 icon: https://jupyter.org/assets/main-logo.svg
 endpoints:
