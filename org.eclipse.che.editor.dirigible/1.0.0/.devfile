@@ -1,0 +1,12 @@
+specVersion: 0.0.1
+name: derigible-ide
+projects:
+  - name: plugins
+    source:
+      type: git
+      location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
+tools:
+  - name: jupyter
+    type: cheEditor
+    id: org.eclipse.che.editor.dirigible:1.0.0
+
