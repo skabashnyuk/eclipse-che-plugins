@@ -8,5 +8,5 @@ projects:
 tools:
   - name: jupyter
     type: cheEditor
-    id: org.eclipse.che.editor.jupyter:1.0.0
+    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.jupyter:1.0.0
 
