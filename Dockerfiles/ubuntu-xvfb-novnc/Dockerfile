@@ -1,56 +1,22 @@
 FROM ubuntu:18.04
 
-## Connection ports for controlling the UI:
-# VNC port:5901
-# noVNC webport, connect via http://IP:6901/?password=vncpassword
-ENV DISPLAY=:1 \
-    VNC_PORT=5901 \
-    NO_VNC_PORT=6901
-EXPOSE $VNC_PORT $NO_VNC_PORT
+EXPOSE 6080
 
-ENV TERM=xterm \
-    DEBIAN_FRONTEND=noninteractive \
-    
-
-### Install some common tools
-RUN echo "Install some common tools for further installation" \
-    && apt-get update  \
-    && apt-get install -y mc vim wget net-tools locales bzip2 \
-        python-numpy #used for websockify/novnc \
-    && apt-get clean -y
-    
-RUN echo "generate locales for en_US.UTF-8" && locale-gen en_US.UTF-8    
-ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
-
-### Install custom fonts
-RUN echo "Installing ttf-wqy-zenhei" \
-    && apt-get install -y ttf-wqy-zenhei
+ENV DEBIAN_FRONTEND noninteractive
+ENV LC_ALL C.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 
-# Install Xvfb
-RUN apt-get update \
-    && apt-get install -y xvfb x11vnc xterm \
-    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
-
-
-# Add VNC startup script
-COPY start-vnc-session.sh /usr/bin/
-RUN chmod +x /usr/bin/start-vnc-session.sh
-
-# This is a bit of a hack. At the moment we have no means of starting background
-# tasks from a Dockerfile. This workaround checks, on each bashrc eval, if the X
-# server is running on screen 0, and if not starts Xvfb, x11vnc and novnc.
-RUN echo "[ ! -e /tmp/.X0-lock ] && (/usr/bin/start-vnc-session.sh 0 &> /tmp/display-0.log)" >> ~/.bashrc
-RUN echo "export DISPLAY=:0" >> ~/.bashrc
-
-
-### Envrionment config
-ENV HOME=/home/user \
-    VNC_COL_DEPTH=24 \
-    VNC_RESOLUTION=1920x1080 \
-    NO_VNC_HOME=/home/user/novnc
-
-WORKDIR $HOME
+RUN  apt-get update && apt-get -y install \
+	mc \
+	xvfb \
+	x11vnc \
+	supervisor \
+	fluxbox \
+	net-tools \
+	wget \
+	gedit
 
 RUN useradd -u 1000 -G users,sudo,root -d /home/user --shell /bin/bash -m user  \
     && usermod -p "*" user  \
@@ -68,13 +34,29 @@ RUN useradd -u 1000 -G users,sudo,root -d /home/user --shell /bin/bash -m user  
                chmod -R g+rwX ${f}; \
            done ;
 
-### Install noVNC - HTML5 based VNC viewer
-RUN echo "Install noVNC - HTML5 based VNC viewer" \
-    && mkdir -p $NO_VNC_HOME/utils/websockify \
-    && wget -qO- https://github.com/novnc/noVNC/archive/v1.0.0.tar.gz | tar xz --strip 1 -C $NO_VNC_HOME \
-     # use older version of websockify to prevent hanging connections on offline containers, see https://github.com/ConSol/docker-headless-vnc-container/issues/50
-    && wget -qO- https://github.com/novnc/websockify/archive/v0.6.1.tar.gz | tar xz --strip 1 -C $NO_VNC_HOME/utils/websockify \
-    && chmod +x -v $NO_VNC_HOME/utils/*.sh
-    ## create index.html to forward automatically to `vnc_lite.html`
+#=======
+# noVNC
+#=======
+#RUN  wget -nv -O noVNC.zip "https://github.com/novnc/noVNC/archive/v1.0.0.zip" \
+# && unzip -x noVNC.zip \
+# && rm noVNC.zip  \
+# && mv noVNC-1.0.0 /opt/noVNC \
+# && wget -nv -O websockify.zip "https://github.com/novnc/websockify/archive/v0.8.0.zip" \
+# && unzip -x websockify.zip \
+# && mv websockify-0.8.0 /opt/noVNC/utils/websockify \
+# && rm websockify.zip \
+# && ln /opt/noVNC/vnc.html /opt/noVNC/index.html
 
 
+RUN  mkdir -p /opt/noVNC/utils/websockify && \
+    wget -qO- "http://github.com/novnc/noVNC/tarball/master" |  tar -zx --strip-components=1 -C /opt/noVNC && \
+    wget -qO- "https://github.com/novnc/websockify/tarball/master" |  tar -zx --strip-components=1 -C /opt/noVNC/utils/websockify
+
+
+
+
+USER user 
+
+ADD index.html  /opt/noVNC/
+ADD supervisord.conf /opt/
+CMD /usr/bin/supervisord -n -c /opt/supervisord.conf
