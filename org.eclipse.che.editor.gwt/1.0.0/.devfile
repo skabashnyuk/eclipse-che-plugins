@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: gwt-ide
+name: 2_gwt-ide
 projects:
   - name: plugins
     source:

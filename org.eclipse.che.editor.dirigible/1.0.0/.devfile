@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: derigible-ide
+name: 4_derigible-ide
 projects:
   - name: plugins
     source:
