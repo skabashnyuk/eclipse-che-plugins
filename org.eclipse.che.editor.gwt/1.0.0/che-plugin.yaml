@@ -3,7 +3,7 @@ type: Che Editor
 name: gwt-ide
 id: org.eclipse.che.editor.gwt
 title: Eclipse GWT IDE  for Eclipse Che
-Description: Eclipse GWT IDE
+Description: Eclipse GWT  IDE
 Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
 endpoints:
  -  name: "che-gwt-ide-and-master"
