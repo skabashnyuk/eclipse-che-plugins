@@ -63,7 +63,7 @@ endpoints:
       cookiesAuthEnabled: true
 containers:
  - name: che-editor-gwt-ide
-   image: eclipse/che-editor-gwt-ide:nightly
+   image: ksmster/che-editor-gwt-ide:nightly
    env:
        - name: SERVER_PORT
          value: 8080
