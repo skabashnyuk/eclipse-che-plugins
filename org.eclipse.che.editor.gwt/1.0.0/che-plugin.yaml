@@ -69,8 +69,8 @@ containers:
          value: 8080
        - name: CHE_WSAGENT_CORS_ENABLED
          value: false
-       - name: CHE_WSAGENT_SIDECAR2
-         value: true
+       - name: CHE_BLABLA
+         value: "dfsdfs"
    volumes:
        - mountPath: "/plugins"
          name: plugins
