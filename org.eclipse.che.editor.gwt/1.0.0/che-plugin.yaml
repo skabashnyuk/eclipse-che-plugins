@@ -69,7 +69,7 @@ containers:
          value: 8080
        - name: CHE_WSAGENT_CORS_ENABLED
          value: false
-       - namve: CHE_WSAGENT_SIDECAR
+       - name: CHE_WSAGENT_SIDECAR
          value: true
    volumes:
        - mountPath: "/plugins"
