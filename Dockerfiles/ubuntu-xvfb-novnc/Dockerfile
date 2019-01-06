@@ -6,17 +6,19 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
+ENV HOME=/home/user
 
 
 RUN  apt-get update && apt-get -y install \
-	mc \
-	xvfb \
-	x11vnc \
-	supervisor \
-	fluxbox \
-	net-tools \
-	wget \
-	gedit
+    mc \
+    xvfb \
+    x11vnc \
+    supervisor \
+    fluxbox \
+    net-tools \
+    wget \
+    gedit \
+    && apt-get clean && apt-get autoclean && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -u 1000 -G users,sudo,root -d /home/user --shell /bin/bash -m user  \
     && usermod -p "*" user  \
@@ -56,7 +58,7 @@ RUN  mkdir -p /opt/noVNC/utils/websockify && \
 
 
 USER user 
-
+WORKDIR /projects
 ADD index.html  /opt/noVNC/
 ADD supervisord.conf /opt/
 CMD /usr/bin/supervisord -n -c /opt/supervisord.conf
