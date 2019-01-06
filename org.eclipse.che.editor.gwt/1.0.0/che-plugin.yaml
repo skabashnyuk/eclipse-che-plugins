@@ -67,6 +67,8 @@ containers:
    env:
        - name: SERVER_PORT
          value: 8080
+       - name: CHE_WSAGENT_CORS_ENABLED
+         value: false
    volumes:
        - mountPath: "/plugins"
          name: plugins
