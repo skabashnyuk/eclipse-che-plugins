@@ -69,6 +69,11 @@ containers:
          value: 8080
        - name: CHE_WSAGENT_CORS_ENABLED_DEFAULT
          value: false
+       - name: JAVA_OPTS
+            value: "-XX:MaxRAM=450m -XX:MaxRAMFraction=2 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10
+              -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
+              -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true
+              -Xms20m "
    volumes:
        - mountPath: "/plugins"
          name: plugins
