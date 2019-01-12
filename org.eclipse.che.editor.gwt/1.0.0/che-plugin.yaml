@@ -67,8 +67,6 @@ containers:
    env:
        - name: SERVER_PORT
          value: 8080
-       - name: CATALINA_OPTS
-         value: -XX:MaxRAM=450m -XX:MaxRAMFraction=2 -XX:+UseParallelGC -XX:MinHeapFreeRatio=10  -XX:MaxHeapFreeRatio=20 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true  -Xms20m -Djava.security.egd=file:/dev/./urandom -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dche.local.conf.dir=${CHE_LOCAL_CONF_DIR}
    volumes:
        - mountPath: "/plugins"
          name: plugins
