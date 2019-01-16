@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: test_gwt-ide
+name: 2_gwt-ide
 projects:
   - name: plugins
     source:
@@ -8,5 +8,5 @@ projects:
 tools:
   - name: jupyter
     type: cheEditor
-    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.gwt:1.0.0
+    id: org.eclipse.che.editor.gwt:1.0.0
 
