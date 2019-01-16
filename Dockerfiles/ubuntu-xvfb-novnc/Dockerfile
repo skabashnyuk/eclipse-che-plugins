@@ -17,7 +17,6 @@ RUN  apt-get update && apt-get -y install \
     fluxbox \
     net-tools \
     wget \
-    gedit \
     && apt-get clean && apt-get autoclean && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -u 1000 -G users,sudo,root -d /home/user --shell /bin/bash -m user  \

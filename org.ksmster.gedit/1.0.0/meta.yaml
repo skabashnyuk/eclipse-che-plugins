@@ -1,0 +1,7 @@
+id: org.ksmster.gedit
+version: 1.0.0
+type: Che Editor
+name: gedit-sample
+title: Gedit sample
+description: Gedit sample
+url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.ksmster.broadway-sample/1.0.0/che-editor-plugin.tar.gz
