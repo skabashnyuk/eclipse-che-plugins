@@ -6,13 +6,6 @@ projects:
       type: git
       location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
 tools:
-  - name: broadway-sample
+  - name: gedit-sample
     type: cheEditor
-    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.broadway-sample:1.0.0
-commands:
-  - name: build
-    actions:
-      - type: exec
-        tool: broadway-sample
-        command: ls
-        workdir: /projects/eclipse-che-plugins
+    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.gedit:1.0.0
