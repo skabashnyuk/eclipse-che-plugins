@@ -1,0 +1,7 @@
+id: org.ksmster.intellij
+version: 1.0.0
+type: Che Editor
+name: intellij-sample
+title: Intellij sample
+description: Intellij sample
+url: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.intellij/1.0.0/che-plugin.yaml

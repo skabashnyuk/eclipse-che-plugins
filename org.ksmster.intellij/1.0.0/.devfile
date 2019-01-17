@@ -1,0 +1,11 @@
+specVersion: 0.0.1
+name: intellij-sample
+projects:
+  - name: plugins
+    source:
+      type: git
+      location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
+tools:
+  - name: intellij-sample
+    type: cheEditor
+    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.intelij:1.0.0

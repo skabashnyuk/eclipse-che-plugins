@@ -54,7 +54,7 @@ RUN  mkdir -p /opt/noVNC/utils/websockify && \
     wget -qO- "https://github.com/novnc/websockify/tarball/master" |  tar -zx --strip-components=1 -C /opt/noVNC/utils/websockify
 
 
-
+RUN echo  "echo No tools to launch">> /opt/app_to_launch && chmod +x /opt/app_to_launch
 
 USER user 
 WORKDIR /projects
