@@ -6,7 +6,7 @@ title: Gedit sample
 Description: Gedit sample
 Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
 endpoints:
- -  name: "gedit"
+ -  name: "theia"
     public: true
     targetPort: 6080
     attributes:
