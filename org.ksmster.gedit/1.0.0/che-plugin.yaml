@@ -14,8 +14,11 @@ endpoints:
       type: ide
       discoverable: false
 containers:
- - name: broadway
+ - name: theia-ide
    image: ksmster/che-editor-gedit-sample
+   volumes:
+    - mountPath: "/projects"
+      name: projects
    ports:
        - exposedPort: 6080
    memory-limit: "512M"

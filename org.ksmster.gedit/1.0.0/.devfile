@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: broadway-sample
+name: gedit-sample
 projects:
   - name: plugins
     source:
