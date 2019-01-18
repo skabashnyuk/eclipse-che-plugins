@@ -4,7 +4,7 @@ projects:
   - name: plugins
     source:
       type: git
-      location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
+      location: 'https://github.com/skabashnyuk/che-editor-gwt-ide.git'
 tools:
   - name: jupyter
     type: cheEditor

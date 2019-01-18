@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: 4_eclipse-ide
+name: 4_gtk3_eclipse-ide
 projects:
   - name: plugins
     source:
