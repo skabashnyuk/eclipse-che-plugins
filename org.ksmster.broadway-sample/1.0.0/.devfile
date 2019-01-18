@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: broadway-sample
+name: 5_gtk3_broadway-sample
 projects:
   - name: plugins
     source:
