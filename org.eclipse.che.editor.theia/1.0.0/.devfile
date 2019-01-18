@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: 1_theia-ide
+name: 1_core_editors_theia-ide
 projects:
   - name: che
     source:

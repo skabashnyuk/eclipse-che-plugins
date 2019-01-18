@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: 3_jupyter-ide
+name: 2_html_editor_jupyter-ide
 projects:
   - name: plugins
     source:
