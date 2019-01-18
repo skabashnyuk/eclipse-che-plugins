@@ -8,4 +8,4 @@ projects:
 tools:
   - name: intellij-sample
     type: cheEditor
-    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.intelij:1.0.0
+    id: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.intellij:1.0.0

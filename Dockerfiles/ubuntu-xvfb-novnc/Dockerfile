@@ -60,4 +60,7 @@ USER user
 WORKDIR /projects
 ADD index.html  /opt/noVNC/
 ADD supervisord.conf /opt/
+ADD entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
 CMD /usr/bin/supervisord -n -c /opt/supervisord.conf
