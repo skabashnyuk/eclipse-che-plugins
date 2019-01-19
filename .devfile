@@ -1,10 +1,5 @@
 specVersion: 0.0.1
 name: devfile_demo
-projects:
-  - name: che
-    source:
-      type: git
-      location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
 tools:
   - name: theia-editor
     type: cheEditor
