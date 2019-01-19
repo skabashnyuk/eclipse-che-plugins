@@ -9,5 +9,8 @@ echo "Using Che api server ${CHE_HOST}"
 find . -name ".devfile" \
    -exec echo 'Creating workspace with devfile {}' \; \
    -exec curl --silent --output /dev/null -X POST --data-binary @{} -H "Content-type: text/x-yaml" http://$CHE_HOST/api/devfile \;
+find . -name "fix.sh" \
+   -exec echo 'Fixing issues {}' \; \
+   -exec '{}'  \;
 
   
