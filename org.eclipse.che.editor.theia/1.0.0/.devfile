@@ -4,7 +4,7 @@ projects:
   - name: che
     source:
       type: git
-      location: 'https://github.com/eclipse/che.git'
+      location: 'https://github.com/skabashnyuk/eclipse-che-plugins.git'
 tools:
   - name: theia-editor
     type: cheEditor
