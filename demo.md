@@ -18,10 +18,12 @@
 ![Dirigible](https://github.com/eclipse/dirigible/raw/master/logo/dirigible-logo-symbol.png "Dirigible")
 
 ### Html tools
- - File browser [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.filebrowser/1.0.0/.devfile]
+ - Web File Browser which can be used as a middleware or standalone app. https://filebrowser.xyz
+ [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.filebrowser/1.0.0/.devfile]
+ 
+ ![Web File Browser](https://user-images.githubusercontent.com/5447088/50716739-ebd26700-107a-11e9-9817-14230c53efd2.gif)
 
- ### Html tools
- - File browser [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.filebrowser/1.0.0/.devfile]
+ 
 
  ###  GTK3 Broadway
  - Clasic Eclipse [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.eclipseide/0.0.1/.devfile]
