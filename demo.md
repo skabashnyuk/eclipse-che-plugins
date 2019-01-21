@@ -10,7 +10,10 @@
 
 ### Html based editors
 
- - Jupyper [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.jupyter/1.0.0/.devfile]
+ -  [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.jupyter/1.0.0/.devfile]
+ The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+![Jupyper](https://jupyter.org/assets/jupyterpreview.png "Jupyper")
+
  - Dirigible [http://che-eclipse-che.192.168.64.23.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.dirigible/1.0.0/.devfile]
 
 ### Html tools
