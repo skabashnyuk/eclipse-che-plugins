@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: gedit-sample
+name: 5_novnc_gedit-sample
 projects:
   - name: plugins
     source:

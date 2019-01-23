@@ -1,5 +1,5 @@
 specVersion: 0.0.1
-name: filebrowser
+name: 3_html_tool_filebrowser
 projects:
   - name: plugins
     source:
