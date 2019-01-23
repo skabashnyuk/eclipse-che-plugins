@@ -28,12 +28,13 @@
  ###  GTK3 Broadway
 
  ![GK3 Broadway](https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/img/broadway.png)
-
+- Clasic Eclipse [http://che-eclipse-che.192.168.64.28.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.eclipseide/0.0.1/.devfile]
+ ![GK3 Broadway](https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/img/classic-eclipse.png)
+ 
 
  - Alexander Larsson broadway sample[http://che-eclipse-che.192.168.64.28.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.broadway-sample/1.0.0/.devfile]
   ![GK3 Broadway](https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/img/broadway-sample.png)
- - Clasic Eclipse [http://che-eclipse-che.192.168.64.28.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.eclipse.che.editor.eclipseide/0.0.1/.devfile]
- ![GK3 Broadway](https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/img/classic-eclipse.png)
+ 
 
  ###  Exotic
  - Gedit [http://che-eclipse-che.192.168.64.28.nip.io/f?url=https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.gedit/1.0.0/.devfile]
