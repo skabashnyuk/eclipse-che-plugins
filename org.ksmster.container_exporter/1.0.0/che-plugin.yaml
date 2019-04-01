@@ -1,9 +1,9 @@
 endpoints:
- -  name: "container_exporter"
+ -  name: "container-exporter"
     public: true
     targetPort: 9104
 containers:
- - name: container_exporter
+ - name: container-exporter
    image: eclipse/che-machine-exec
    ports:
      - exposedPort: 9104
