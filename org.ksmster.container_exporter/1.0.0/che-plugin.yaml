@@ -4,6 +4,6 @@ endpoints:
     targetPort: 9104
 containers:
  - name: container-exporter
-   image: eclipse/che-machine-exec
+   image: prom/container-exporter
    ports:
      - exposedPort: 9104
