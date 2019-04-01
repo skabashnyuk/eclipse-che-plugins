@@ -1,7 +1,7 @@
 endpoints:
  -  name: "container-exporter"
     public: true
-    targetPort: 9104
+    targetPort: 8080
 containers:
  - name: container-exporter
    image: google/cadvisor:latest
