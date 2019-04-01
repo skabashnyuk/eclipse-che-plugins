@@ -4,6 +4,6 @@ endpoints:
     targetPort: 9104
 containers:
  - name: container-exporter
-   image: prom/container-exporter
+   image: google/cadvisor:latest
    ports:
-     - exposedPort: 9104
+     - exposedPort: 8080
