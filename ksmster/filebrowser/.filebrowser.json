@@ -1,0 +1,12 @@
+{
+  "port": 8080,
+  "address": "",
+  "database": "./database.db",
+  "defaults": {
+    "scope": "/projects",
+    "allowCommands": true,
+    "allowEdit": true,
+    "allowNew": true,
+    "commands": []
+  }
+}
