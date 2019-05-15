@@ -1,0 +1,12 @@
+id: org.ksmster.container_exporter
+version: 1.0.0
+type: Che Plugin
+name: Container exporter
+title: Container exporter
+description: Container exporter
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+url: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.container_exporter/1.0.0/che-plugin.yaml
+publisher: Red Hat, Inc.
+repository: https://github.com/eclipse/che-machine-exec/
+firstPublicationDate: "2019-02-05"
+category: Other
