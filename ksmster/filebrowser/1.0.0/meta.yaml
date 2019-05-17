@@ -1,7 +1,27 @@
-id: org.ksmster.filebrowser
+apiVersion: v2
+publisher: ksmster
+name: che-editor-filebrowser
 version: 1.0.0
 type: Che Editor
-name: filebrowser
+displayName: File browser 
 title: File browser sample
 description: File browser sample
-url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.ksmster.filebrowser/1.0.0/che-plugin.yaml
+Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
+category: Editor
+repository: https://github.com/skabashnyuk/eclipse-che-plugins/
+firstPublicationDate: "2019-02-05"
+spec:
+    endpoints:
+    - name: "theia"
+      public: true
+      targetPort: 8080
+      attributes:
+        protocol: http
+        type: ide
+        discoverable: false
+    containers:
+    - name: broadway
+      image: ksmster/che-editor-filebrowser
+      ports:
+          - exposedPort: 8080
+      memory-limit: "512M"
