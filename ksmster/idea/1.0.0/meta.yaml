@@ -21,7 +21,7 @@ spec:
         discoverable: false
     containers:
     - name: intellij-ide
-      image: ksmster/che-editor-idea:2019-05-17
+      image: ksmster/che-editor-intellij-sample
       volumes:
         - mountPath: "/projects"
           name: projects
