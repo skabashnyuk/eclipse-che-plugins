@@ -21,7 +21,7 @@ spec:
         discoverable: false
     containers:
     - name: broadway
-      image: ksmster/che-editor-filebrowser
+      image: ksmster/che-editor-filebrowser:2019-05-17
       ports:
           - exposedPort: 8080
       memory-limit: "512M"
