@@ -1,7 +1,27 @@
-id: org.ksmster.broadway-sample
+apiVersion: v2
+publisher: ksmster
+name: che-editor-broadway
 version: 1.0.0
 type: Che Editor
-name: broadway-sample
-title: Alexander Larsson broadway docker sample
-description: Alexander Larsson broadway docker sample
-url: https://github.com/skabashnyuk/eclipse-che-plugins/raw/master/org.ksmster.broadway-sample/1.0.0/che-plugin.yaml
+displayName: Broadway Sample IDE
+title: Broadway Sample for Eclipse Che
+description: Alexander Larsson broadway  sample
+Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
+category: Editor
+repository: https://github.com/skabashnyuk/eclipse-che-plugins/
+firstPublicationDate: "2019-02-05"
+spec:
+  endpoints:
+  - name: "theia"
+    public: true
+    targetPort: 8080
+    attributes:
+        protocol: http
+        type: ide
+        discoverable: false
+  containers:
+  - name: broadway
+    image: ksmster/che-editor-broadway:2019-05-17
+    ports:
+        - exposedPort: 8080
+    memory-limit: "512M"
