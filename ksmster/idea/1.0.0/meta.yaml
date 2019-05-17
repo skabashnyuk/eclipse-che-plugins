@@ -1,7 +1,32 @@
-id: org.ksmster.intellij
+apiVersion: v2
+publisher: ksmster
+name: che-editor-intellij
 version: 1.0.0
 type: Che Editor
-name: intellij-sample
-title: Intellij sample
-description: Intellij sample
-url: https://raw.githubusercontent.com/skabashnyuk/eclipse-che-plugins/master/org.ksmster.intellij/1.0.0/che-plugin.yaml
+displayName: IdeaIC2018.3 IDE
+title: Intellij 2018.3 IDE
+description: Intellij IDE for Eclipse Che
+Icon: https://pbs.twimg.com/profile_images/929088242456190976/xjkS2L-0_400x400.jpg
+category: Editor
+repository: https://github.com/skabashnyuk/eclipse-che-plugins/
+firstPublicationDate: "2019-02-05"
+spec:
+    endpoints:
+    - name: "theia"
+      public: true
+      targetPort: 6080
+      attributes:
+        protocol: http
+        type: ide
+        discoverable: false
+    containers:
+    - name: intellij-ide
+      image: ksmster/che-editor-idea:2019-05-17
+      volumes:
+        - mountPath: "/projects"
+          name: projects
+        - mountPath: "/home/user/.IdeaIC2018.3"
+          name: IdeaIC2018
+      ports:
+          - exposedPort: 6080
+      memory-limit: "1024M"
