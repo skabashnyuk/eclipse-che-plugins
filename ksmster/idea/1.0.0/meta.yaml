@@ -29,4 +29,4 @@ spec:
           name: IdeaIC2018
       ports:
           - exposedPort: 6080
-      memory-limit: "1024M"
+      memoryLimit: "1536M"
