@@ -27,4 +27,4 @@ spec:
           name: projects
       ports:
           - exposedPort: 6080
-      memory-limit: "512M"
+      memoryLimit: "512M"

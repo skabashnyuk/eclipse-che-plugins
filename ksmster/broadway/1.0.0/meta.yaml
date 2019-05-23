@@ -24,4 +24,4 @@ spec:
     image: ksmster/che-editor-broadway:2019-05-17
     ports:
         - exposedPort: 8080
-    memory-limit: "512M"
+    memoryLimit: "512M"
